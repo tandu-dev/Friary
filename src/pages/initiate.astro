@@ -1,7 +1,33 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import InitiateDrawer from "../components/InitiateDrawer.astro"
 ---
 
 <BaseLayout >
-    <h1>Initiate</h1>
+    <div class="grid grid-cols-2">
+    <div>
+    <h1>Welcome to the Initiate Section of the Friary</h1>
+    <p>Please
+        note- Initiate Material is THE FOUNDATION of your Work within the
+        Friary. We cannot stress that enough. Do not make the mistake of
+        treating this time period as a &quot;holding pattern&quot; necessary before your
+        Friar Adeptus Minor Recognition.</p>
+    <p>If you are not already in contact with Initiates of many degrees, you should begin to
+        cultivate those dialogues now.</p>
+    <p>Please
+        note- the Monographs are in Adobe PDF format, and require Adobe's FREE
+        acrobat reader (version 5 or higher), which you may download <a
+            href="http://www.adobe.com/products/acrobat/readstep.html" target="_blank">HERE</a>.
+    </p>
+    <p>Also-
+        the Monographs are each around 1MB in size, and may take a few minutes
+        to display/download on slower dial-up internet accounts.</p>
+    <p>Again,
+        for your convenience, an extra I&deg; <a href="/readingList">Specific Reading List</a> page is made
+        available, from which you may order certain books directly.</p>
+    </div>
+    <div>
+        <InitiateDrawer />
+    </div>
+</div>
 </BaseLayout>

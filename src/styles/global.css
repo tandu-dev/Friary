@@ -101,4 +101,28 @@ html {
     color: #fff;
   }
 
+  .social a {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #0d0950;
+    text-decoration: none;
+  }
+  .social a {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: #0d0950;
+    text-decoration: none;
+  }
+  a {
+    color:blue;
+
+  }
+
+  a :visited {
+    color: purple;
+  }
+  .dark a {color: gold}
+
+  .dark a :visited { color: aqua}
+
 }

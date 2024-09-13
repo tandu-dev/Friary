@@ -1,16 +1,45 @@
 ---
 import Social from "./Social.astro";
+const year = new Date().getFullYear();
 ---
 
 <style>
     footer {
-        display: flex;
         gap: 1rem;
         margin-top: 2rem;
     }
 </style>
 <footer>
-    <Social platform="twitter" username="hipsterabraxas" />
-    <Social platform="github" username="tandu-dev" />
-    <Social platform="youtube" username="johannitechurch" />
+    <div class="grid grid-cols-3 place-content-center">
+        <Social
+            platform="discord"
+            username="channels/956990934627811388/956990935210803305"
+        />
+        <Social platform="github" username="tandu-dev" />
+        <Social platform="youtube" username="johannitechurch" />
+    </div>
+    <div class="grid grid-cols-1 place-content-center">
+        <p>
+            <em>
+                Copyright © {year} The Friary. All rights reserved. Powered by Astro
+                JS.
+            </em>
+        </p>
+    </div>
 </footer>
+<style>
+    a {
+        color: blue;
+    }
+
+    a :visited {
+        color: purple;
+    }
+    .dark a {
+        color: blue;
+    }
+
+    .dark a :visited {
+        color: purple;
+    }
+</style>
