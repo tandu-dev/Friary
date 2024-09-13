@@ -3,27 +3,38 @@
         {
             "url": "/",
             "name": "Home",
+            "navbar": "Home",
+            "order": 0
+        },
+        {
+            "url": "/officers",
+            "name": "Grand Lodge Officers",
+            "navbar": "Officers",
             "order": 0
         },
         {
             "url": "/initiate",
             "name": "Friar Initiate I° Section",
+            "navbar": "Initiate",
             "order": 1
         },
         {
             "url": "/FAMin",
             "name": "Friar Adeptus Minor II° Section",
+            "navbar": "Adeptus Minor",
             "order": 2
         },
         {
             "url": "/FAMaj",
             "name": "Friar Adeptus Major III° Section",
-            "order": 4
+            "navbar": "Adeptus Major",
+            "order": 3
         },
         {
             "url": "/MagTemp",
             "name": "Magister Templi IV° Section°",
-            "order": 5
+            "navbar": "Magister Templi",
+            "order": 4
         }
     ]
 }

@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import { Image } from "astro:assets";
+import tanduImg from "../images/officers/TANDUV.jpg"
+---
+<BaseLayout>
+<h1>Current Officers</h1>
+<ul>
+  <li><strong>Grandmaster:</strong>&nbsp;<a href="mailto:tandu@ordosacraeflammae.org">TANDU V&deg;</a>
+    <p>
+        <Image src={tanduImg} alt="Tandu V" width="200" height="400"/>
+    </p>
+
+  </li>
+
+  <li><strong>Dean of the College of Seven:</strong>&nbsp;<a href="mailto:abathur@johannite.org">Abathur V&deg;</a></em></li>
+  <li><strong>College of Seven Members:</strong>
+     <ul>
+        <li><a href="mailto: benjamin.pierce@gmail.com">Ophidian IV&deg;</a></li>
+        <li><a href="mailto:executive.director@ordosacraeflammae.org">Lux et Tenebris V&deg;</a></li>        
+    </ul>
+</ul>
+</BaseLayout>

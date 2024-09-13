@@ -6,11 +6,25 @@ html {
   body {
     margin: 0 auto;
     width: 100%;
-    max-width: 80ch;
+    max-width: 100ch;
     padding: 1rem;
     line-height: 1.5;
   }
   
+  p {
+    padding: 1em 1em 0em 1em;
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 65px;
+    unicode-bidi: isolate;
+  }
+
   * {
     box-sizing: border-box;
   }

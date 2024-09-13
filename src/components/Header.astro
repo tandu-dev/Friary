@@ -1,21 +1,31 @@
 ---
-
-import ThemeIcon from "./ThemeIcon.astro"; 
+import ThemeIcon from "./ThemeIcon.astro";
 import Drawer from "./Drawer.astro";
+import { Image } from "astro:assets";
+import HeaderImage from "../images/cropped-signumsite21.png"
 
 interface Props {
-  menuSource?: string;
-
+    menuSource?: string;
 }
 
 const { menuSource = "../content/menu.json" } = Astro.props;
-
-
 ---
+
 <header>
-    <nav>
-        
-        <ThemeIcon />
-        <Drawer menuSource={menuSource}/>
+    <Image src={HeaderImage} alt="The Friary"/>
+    <nav class="w-full">
+        <div>
+            <span><ThemeIcon /></span>
+            <span class="w-full"><Drawer /></span>
+        </div>
     </nav>
 </header>
+<style>
+    div {
+        display: flex;
+    }
+    span {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+</style>
