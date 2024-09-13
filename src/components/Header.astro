@@ -1,0 +1,21 @@
+---
+
+import ThemeIcon from "./ThemeIcon.astro"; 
+import Drawer from "./Drawer.astro";
+
+interface Props {
+  menuSource?: string;
+
+}
+
+const { menuSource = "../content/menu.json" } = Astro.props;
+
+
+---
+<header>
+    <nav>
+        
+        <ThemeIcon />
+        <Drawer menuSource={menuSource}/>
+    </nav>
+</header>

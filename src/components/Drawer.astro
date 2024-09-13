@@ -1,0 +1,16 @@
+---
+import menu from '../content/menu.json'
+import Hamburger from "./Hamburger.astro";
+
+
+---
+<div class="drawer">
+	<input id="my-drawer" type="checkbox" class="drawer-toggle" />
+	<Hamburger class="drawer-content" />
+	<div class="drawer-side">
+	  <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+	  <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+        {menu.menu.map((menuItem) => <li><a href={menuItem.url}>{menuItem.name}</a></li>)}
+	  </ul>
+	</div>
+  </div>

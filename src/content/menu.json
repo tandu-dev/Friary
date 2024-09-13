@@ -1,0 +1,29 @@
+{
+    "menu": [
+        {
+            "url": "/",
+            "name": "Home",
+            "order": 0
+        },
+        {
+            "url": "/initiate",
+            "name": "Friar Initiate I° Section",
+            "order": 1
+        },
+        {
+            "url": "/FAMin",
+            "name": "Friar Adeptus Minor II° Section",
+            "order": 2
+        },
+        {
+            "url": "/FAMaj",
+            "name": "Friar Adeptus Major III° Section",
+            "order": 4
+        },
+        {
+            "url": "/MagTemp",
+            "name": "Magister Templi IV° Section°",
+            "order": 5
+        }
+    ]
+}
