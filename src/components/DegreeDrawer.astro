@@ -9,7 +9,13 @@ export function getName(path:string)
     name = name.replace('.pdf', '');
     return  name;
 }
-const allMonographs = await Astro.glob('../content/initiate/*.pdf');
+
+const {degree} = Astro.props;
+const monographPath = `../content/${degree}/*.pdf`;
+
+const allMonographs = await Astro.glob( '../content/*/*.pdf');
+
+const degreeMonographs = allMonographs.filter(mono => mono.default.includes(degree));
 
 ---
 <div class="mx-2 flex-1 px-2 float-end font-bold">Monographs</div>
@@ -25,8 +31,8 @@ const allMonographs = await Astro.glob('../content/initiate/*.pdf');
     <div class="drawer-side">
       <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
       <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-        <!-- Sidebar content here -->         
-        {allMonographs.map((graph) => <li><a href={graph.default}>{getName(graph.default)}</a></li>)}
+        <!-- Sidebar content here -->     
+        {degreeMonographs.map((graph) => <li><a href={graph.default}>{getName(graph.default)}</a></li>)}
       </ul>
     </div>    
   </div>  

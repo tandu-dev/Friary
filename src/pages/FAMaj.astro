@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import InitiateDrawer from "../components/DegreeDrawer.astro"
+import DegreeDrawer from "../components/DegreeDrawer.astro";
+---
+
+<BaseLayout >
+    <div class="grid grid-cols-2">
+    <div>
+    
+    <h1>Welcome to the Friar Adeptus Major Section of the Friary</h1>
+    
+    <p>
+        Please note- the Monographs are in Adobe PDF format, and require
+        Adobe's FREE acrobat reader, which you may download HERE.
+    </p>
+    <p>
+        Also- the Monographs are each around 1MB in size, and may take
+        a few minutes to display/download on slower dial-up internet
+        accounts.
+    </p>
+    </div>
+    <div>
+        <DegreeDrawer degree="FAMaj"  />
+    </div>
+</div>
+</BaseLayout>

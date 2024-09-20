@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import InitiateDrawer from "../components/DegreeDrawer.astro";
+import DegreeDrawer from "../components/DegreeDrawer.astro";
+---
+
+<BaseLayout>
+    <div class="grid grid-cols-2">
+        <div>
+            <h1>Welcome to the Friar Adeptus Minor Section of the Friary</h1>
+            <p>
+                Note- While it is your Right, Duty, and Responsibility as a
+                Friar Adeptus Minor to confer the First Degree Initiation, we
+                would like you to take a little while to "settle in" to your new
+                degree, and focus upon your own cultivation of the Sacred Flame
+                before undertaking the role of Initiator.
+            </p>
+            <p>
+                Please note- the Monographs are in Adobe PDF format, and require
+                Adobe's FREE acrobat reader, which you may download HERE.
+            </p>
+            <p>
+                Also- the Monographs are each around 1MB in size, and may take
+                a few minutes to display/download on slower dial-up internet
+                accounts.
+            </p>
+        </div>
+        <div>
+            <DegreeDrawer degree="FAMin" />
+        </div>
+    </div>
+</BaseLayout>
